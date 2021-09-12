@@ -1,6 +1,9 @@
 // External modules
 import React from 'react'
 
+// Internal modules
+import { HighlightCard } from '../../components/HighlightCard'
+
 // Styles
 import * as Styled from './styles'
 
@@ -25,6 +28,26 @@ export const Dashboard: React.FC = () => {
           <Styled.Icon name="power" />
         </Styled.UserWrapper>
       </Styled.Header>
+
+      <Styled.HighlightCards>
+        <HighlightCard
+          title="Entrada"
+          amount={400}
+          lastTransaction="11 de Setembro de 2021"
+        />
+
+        <HighlightCard
+          title="Entrada"
+          amount={400}
+          lastTransaction="11 de Setembro de 2021"
+        />
+
+        <HighlightCard
+          title="Entrada"
+          amount={400}
+          lastTransaction="11 de Setembro de 2021"
+        />
+      </Styled.HighlightCards>
     </Styled.Container>
   )
 }
